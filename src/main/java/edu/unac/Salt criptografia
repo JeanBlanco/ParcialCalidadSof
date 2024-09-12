@@ -1,0 +1,11 @@
+Estás diseñando un sistema de almacenamiento seguro de contraseñas. Una técnica común para proteger las contraseñas es el uso de "sales" (salts)
+aleatorias antes de hacer el hash de las contraseñas. La "sal" es una cadena aleatoria que se concatena con la contraseña antes de aplicar una
+función de hash. Esto asegura que dos usuarios con la misma contraseña no terminen con el mismo hash.
+
+Un SaltGenerator es una clase que genera una cadena aleatoria ("salt") de una longitud específica.
+Esta cadena no debe tener caracteres repetidos consecutivamente ni secuencias consecutivas de caracteres.
+
+-La sal debe ser una cadena de caracteres generada aleatoriamente a partir de un conjunto específico (por ejemplo, letras del alfabeto).
+-No debe haber caracteres repetidos consecutivamente en la cadena generada (máximo 2).
+-No debe haber secuencias consecutivas de caracteres en la cadena generada (máximo 2).
+-No debe generar sal duplicada anteriormente.
